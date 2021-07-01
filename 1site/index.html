@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>TRVLTrip</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Путешествия" onclick="slowScroll('#main')">Путешествия</a>
+      <a href="#" title="отзыв" onclick="slowScroll('#contacts')">Отзыв</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Куда несет нас</h1>
+    <h3>ветер приключений?</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Путешествия</h2>
+      <span>Прекрасный способ абстрагироваться от бытовых проблем</span>
+    </div>
+    <div class="text">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit, ut vero commodi voluptate? Ipsam reiciendis, necessitatibus incidunt ipsa quis sapiente excepturi, optio iusto voluptatibus dolorem officia quidem, numquam eaque minus, autem praesentium rem architecto dolores. Ipsa unde id velit optio magni enim! Illum obcaecati, dolorem distinctio nemo, ipsum iure.</span>
+    </div>
+  </div>
+<div class="container">
+    <div class="card">
+      <div class="imgBX">
+        <img src="https://cms.enjourney.ru/upload/Jana/Portugal/POr6.jpg" height=200px width=300px></img>
+      </div>
+      <div class="content">
+        <h2>Португалия</h2>
+        <p>Официально — Португа́льская Респу́блика (порт. República Portuguesa [ʁɛˈpuβlikɐ puɾtuˈɣezɐ]) — самое западное государство в континентальной Европе, расположенное в юго-западной части Пиренейского полуострова. На севере и востоке граничит с Испанией, на юге и западе омывается Атлантическим океаном; таким образом, это государство в целом представляет собой полуанклав, или прибрежный анклав. Название страны происходит от города Порту (лат. Portus Cale). Официальным и национальным языком является португальский.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBX">
+        <img src="https://horosho-tam.ru/pics/06/5a/596a8fa8c68b682d6abd5a06.jpg" height=200px width=300px></img>
+      </div>
+      <div class="content">
+        <h2>Испания</h2>
+        <p>Официально Короле́вство Испа́ния (исп. Reino de España, МФА: [ˈreino ðe esˈpaɲa]) — трансконтинентальное суверенное государство на юго-западе Европы и частично в Африке, член Европейского союза и НАТО. Испания занимает бо́льшую часть (80 %) Пиренейского полуострова, а также Канарские и Балеарские острова, имеет общую площадь 504 782 км² (вместе с небольшими суверенными территориями на африканском побережье, городами Сеута и Мелилья), являясь четвёртой по величине страной в Европе (после России, Украины и Франции).</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBX">
+        <img src="https://lux-galatex.com/wp-content/uploads/2019/07/imgonline-com-ua-Mirror-0scXru6z2WgVEa2-1080x675.jpg" height=200px width=300px></img>
+      </div>
+      <div class="content">
+        <h2>Кипр</h2>
+        <p>Официально территория Республики Кипр включает 98 % территории одноимённого острова (остальные 2,7 % занимают британские военные базы Акротири и Декелия), а также близлежащие острова Агиос Георгиос, Геронисос, Глюкиотисса, Кила, Киедес, Кордилия и Мазаки. Де-факто после событий 1974 года остров разделён на четыре части: 57,6 % территории острова контролируется властями Республики Кипр (населённой в основном этническими киприотами), 36 % — Турецкой Республикой Северного Кипра (населённой в основном этническими турками), 3,7 % — ООН, 2,7 % — Британскими вооружёнными силами.</p>
+      </div>
+    </div>
+  </div>
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Текст</span><br>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Текст</span><br>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Текст</span><br>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Lorem ipsum dolor sit amet</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
